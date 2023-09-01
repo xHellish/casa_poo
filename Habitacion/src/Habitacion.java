@@ -3,6 +3,8 @@ public class Habitacion {
 	
 	// --------------- Atributos --------------
 	
+	String nombre;
+	
 	boolean servicios = true;
 	boolean puertaAbierta = true;
 	boolean ventanasAbiertas = true;
@@ -15,16 +17,19 @@ public class Habitacion {
 	int ventanasCont;
 	
 	int objetosCont = 0;
-	String[] objetos = new String[20];
+	String[] objetosArray = new String[20];
 	
 	// --------------- Constructor--------------
 	
 	public Habitacion() {
+		nombre = "";
 		metrosCuadrados = 0;
 		puertasCont = 0;
 		ventanasCont = 0;		
 	}
-	public Habitacion(int _dimension, int _puertas, int _ventanas) {
+	
+	public Habitacion(String _nombre, int _dimension, int _puertas, int _ventanas) {
+		nombre = _nombre;
 		metrosCuadrados = _dimension;
 		puertasCont = _puertas;
 		ventanasCont = _ventanas;		
@@ -73,6 +78,7 @@ public class Habitacion {
 	}
 	
 	public void estado() {
+		System.out.println("Habitación: "+ nombre +". "+ metrosCuadrados + " metros cuadrados.");
 		System.out.println("Servicios: "+ servicios);
 		System.out.println("Puertas abiertas: "+ puertaAbierta);
 		System.out.println("Ventanas abiertas: "+ ventanasAbiertas);
@@ -85,7 +91,7 @@ public class Habitacion {
 	public void agregarObjeto(String _objeto) {
 		
 		if (objetosCont < 20) {
-			objetos[objetosCont] = _objeto;
+			objetosArray[objetosCont] = _objeto;
 			objetosCont += 1;
 			
 		}else {
@@ -94,5 +100,28 @@ public class Habitacion {
 		
 	}
 	
+	
+	// Si la condición es = 0, imprime los objetos.
+	public String[] objetos(int condicion) {
+		
+		if (condicion == 0) {
+			for (int i = 0; i < objetosArray.length; i++) {
+				if(objetosArray[i] != null) {
+					if(objetosArray[i+1] == null) {
+						System.out.println(objetosArray[i]);
+						
+					}else {
+						System.out.print(objetosArray[i]+" - ");
+					}
+				}
+			}
+			
+			return objetosArray;
+			
+		}else {
+			return objetosArray;
+			
+		}
+	}
 }
 

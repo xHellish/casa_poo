@@ -2,7 +2,14 @@
 public class Administrador {
 	
 	// ----------------- Habitaciones ---------------- // 
-	
+	/* 
+	 * 
+	 * 
+	 * Estas las hice clases separadas usando super entoncess no creo que necesitemos lo de aqui
+	 * Yo diria que aqui pongamos a que hora se realiza cada cosa y ya 
+	 * 
+	 * 
+	 * 
 	Habitacion kitchen = new Habitacion("Cocina", 10, 3, 2);
 	Habitacion room1 = new Habitacion("Dormitorio 1", 10, 1, 1);
 	Habitacion room2 = new Habitacion("Dormitorio 2", 12, 1, 1);
@@ -11,6 +18,7 @@ public class Administrador {
 	Habitacion restroom = new Habitacion("Baño", 6, 1, 0);
 	Habitacion restroom2 = new Habitacion("Baño 2", 6, 1, 1);
 	Habitacion garage = new Habitacion("Cochera", 8, 2, 0);
+	
 
 	// ----------------- Métodos ------------------ //
 	
@@ -74,7 +82,7 @@ public class Administrador {
 			}
 		}
 		
-		/* -Falta crear un método en la clase Habitación que desactive los servicios: 
+		 -Falta crear un método en la clase Habitación que desactive los servicios: 
 		   	"serviciosOff" y otro que los active "serviciosOn". 
 		   	
 			-También un condicional en el método encender luz, que no sea posible si los servicios 
@@ -103,8 +111,8 @@ public class Administrador {
 			}else if (zona == "garage") {
 				garage.serviciosOff();
 			}	
-		} */
-	}
+		} 
+	}*/
 }
 		
 			

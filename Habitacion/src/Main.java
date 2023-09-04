@@ -6,6 +6,6 @@ public class Main {
 		
 		Administrador manager = new Administrador();
 		
-		manager.orden("status", "living");
+		//manager.orden("status", "living");
 	}
 }

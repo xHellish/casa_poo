@@ -39,23 +39,28 @@ public class Habitacion {
 	
 	public void cerrarPuerta() {
 		puertaAbierta = false;
+		System.out.println("Puerta cerrada");
 	}
 	
 	public void abrirPuerta() {
 		puertaAbierta = true;
+		System.out.println("Puerta abierta");
 	}
 	
 	public void cerrarVentana() {
 		ventanasAbiertas = false;
+		System.out.println("Ventana cerrada");
 	}
 	
 	public void abrirVentana() {
 		ventanasAbiertas = true;
+		System.out.println("Ventana abierta");
 	}
 	
 	public void encenderLuz() {
 		if(servicios) {
 			iluminado = true;
+			System.out.println("Luz encendida");
 		}
 		else {
 			System.out.println("Los servicios estan desactivados");
@@ -64,22 +69,27 @@ public class Habitacion {
 	
 	public void apagarLuz() {
 		iluminado = false;
+		System.out.println("Luz apagada");
 	}
 	
 	public void ensuciar() {
 		sucio = true;
+		System.out.println("Habitacion ensuciada");
 	}
 	
 	public void limpiar() {
 		sucio = false;
+		System.out.println("Habitacion limpiada");
 	}
 	
 	public void taquear() {
 		taqueado = true;
+		System.out.println("Se ha taqueado la tuberia");
 	}
 	
 	public void destaquear() {
 		taqueado = false;
+		System.out.println("Se ha destaqueado la tuberia");
 	}
 	
 	public void estado() {
@@ -98,6 +108,7 @@ public class Habitacion {
 		if (objetosCont < 20) {
 			objetosArray[objetosCont] = _objeto;
 			objetosCont += 1;
+			System.out.println("Se ha agregado "+_objeto+" a la habitacion");
 			
 		}else {
 			System.out.println("No puede agregar más objetos. (máx 20)");

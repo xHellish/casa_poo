@@ -80,7 +80,10 @@ public class Administrador {
 			-También un condicional en el método encender luz, que no sea posible si los servicios 
 			están desactivados, a su vez que se apague la luz si se desactivan los servicios.
 			
+			--Si se van los servicios, en los banos y la cocina hay que poner que se va el agua
+			
 			-Todavía no está implementado el método de inundar habitación.
+			
 		
 		 else if (_comando == "serviciosOff") {
 			if (zona == "kitchen") {

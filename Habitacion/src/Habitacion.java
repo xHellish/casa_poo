@@ -54,7 +54,12 @@ public class Habitacion {
 	}
 	
 	public void encenderLuz() {
-		iluminado = true;
+		if(servicios) {
+			iluminado = true;
+		}
+		else {
+			System.out.println("Los servicios estan desactivados");
+		}
 	}
 	
 	public void apagarLuz() {
@@ -122,6 +127,13 @@ public class Habitacion {
 			return objetosArray;
 			
 		}
+	}
+	public void serviciosOn() {
+		servicios=true;
+	}
+	public void serviciosOff() {
+		servicios=false;
+		iluminado=false;
 	}
 }
 

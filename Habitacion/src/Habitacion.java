@@ -1,7 +1,7 @@
 
 public class Habitacion {
 	
-	// --------------- Atributos --------------
+	// --------------- Atributos -------------- //
 	
 	String nombre;
 	
@@ -19,7 +19,7 @@ public class Habitacion {
 	int objetosCont = 0;
 	String[] objetosArray = new String[20];
 	
-	// --------------- Constructor--------------
+	// --------------- Constructor -------------- //
 	
 	public Habitacion() {
 		nombre = "";
@@ -35,7 +35,7 @@ public class Habitacion {
 		ventanasCont = _ventanas;		
 	}
 	
-	//----------------- Métodos-----------------
+	//----------------- Métodos ----------------- //
 	
 	public void cerrarPuerta() {
 		puertaAbierta = false;

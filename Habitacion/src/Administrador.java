@@ -1,6 +1,60 @@
 
 public class Administrador {
 	
+	public static void main(String[] args) {
+		Cocina kitchen = new Cocina();
+		Dormitorio room1 = new Dormitorio();
+		Dormitorio room2 = new Dormitorio();
+		Lavanderia laundry = new Lavanderia();
+		Sala living = new Sala();
+		Bano restroom1 = new Bano();
+		Bano restroom2 = new Bano();
+		Cochera garage = new Cochera();
+		
+		room1.encenderLuz();
+		room1.abrirPuerta();
+		room2.encenderLuz();
+		room2.abrirPuerta();
+		restroom1.abrirPuerta();
+		restroom1.encenderLuz();
+		restroom1.abrirVentana();
+		restroom1.jalarCadena();
+		restroom1.abrirDucha();
+		room2.apagarLuz();
+		room2.cerrarPuerta();
+		kitchen.encenderLuz();
+		kitchen.abrirVentana();
+		kitchen.abrirPuerta();
+		kitchen.ensuciar();
+		restroom1.cerrarDucha();
+		restroom1.apagarLuz();
+		restroom1.cerrarPuerta();
+		room1.apagarLuz();
+		room1.cerrarPuerta();
+		living.abrirPuerta();
+		living.encenderLuz();
+		kitchen.abrirGrifo();
+		kitchen.limpiar();
+		kitchen.cerrarGrifo();
+		kitchen.apagarLuz();
+		kitchen.cerrarVentana();
+		restroom1.abrirPuerta();
+		restroom1.encenderLuz();
+		restroom1.abrirGrifo();
+		restroom1.cerrarGrifo();
+		restroom1.cerrarVentana();
+		restroom1.apagarLuz();
+		restroom1.cerrarPuerta();
+		garage.abrirPuerta();
+		garage.encenderLuz();
+		living.apagarLuz();
+		living.cerrarPuerta();
+		garage.cerrarPuerta();
+		garage.abrirCochera();
+		garage.apagarLuz();
+		garage.cerrarCochera();
+	}
+	
 	// ----------------- Habitaciones ---------------- // 
 	/* 
 	 * 

@@ -6,7 +6,7 @@ public class Bano extends Habitacion{
 	boolean cadena=false;
 	
 	public Bano() {
-		super("Baño 2", 6, 1, 1);
+		super("Baño", 6, 1, 1);
 	}
 	
 	public void abrirGrifo() {

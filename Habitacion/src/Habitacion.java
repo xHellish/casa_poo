@@ -39,57 +39,57 @@ public class Habitacion {
 	
 	public void cerrarPuerta() {
 		puertaAbierta = false;
-		System.out.println("Puerta cerrada");
+		System.out.println(this.nombre+": Puerta cerrada");
 	}
 	
 	public void abrirPuerta() {
 		puertaAbierta = true;
-		System.out.println("Puerta abierta");
+		System.out.println(this.nombre+": Puerta abierta");
 	}
 	
 	public void cerrarVentana() {
 		ventanasAbiertas = false;
-		System.out.println("Ventana cerrada");
+		System.out.println(this.nombre+": Ventana cerrada");
 	}
 	
 	public void abrirVentana() {
 		ventanasAbiertas = true;
-		System.out.println("Ventana abierta");
+		System.out.println(this.nombre+": Ventana abierta");
 	}
 	
 	public void encenderLuz() {
 		if(servicios) {
 			iluminado = true;
-			System.out.println("Luz encendida");
+			System.out.println(this.nombre+": Luz encendida");
 		}
 		else {
-			System.out.println("Los servicios estan desactivados");
+			System.out.println(this.nombre+": Los servicios estan desactivados");
 		}
 	}
 	
 	public void apagarLuz() {
 		iluminado = false;
-		System.out.println("Luz apagada");
+		System.out.println(this.nombre+": Luz apagada");
 	}
 	
 	public void ensuciar() {
 		sucio = true;
-		System.out.println("Habitacion ensuciada");
+		System.out.println(this.nombre+": Habitacion ensuciada");
 	}
 	
 	public void limpiar() {
 		sucio = false;
-		System.out.println("Habitacion limpiada");
+		System.out.println(this.nombre+": Habitacion limpiada");
 	}
 	
 	public void taquear() {
 		taqueado = true;
-		System.out.println("Se ha taqueado la tuberia");
+		System.out.println(this.nombre+": Se ha taqueado la tuberia");
 	}
 	
 	public void destaquear() {
 		taqueado = false;
-		System.out.println("Se ha destaqueado la tuberia");
+		System.out.println(this.nombre+": Se ha destaqueado la tuberia");
 	}
 	
 	public void estado() {
@@ -108,10 +108,10 @@ public class Habitacion {
 		if (objetosCont < 20) {
 			objetosArray[objetosCont] = _objeto;
 			objetosCont += 1;
-			System.out.println("Se ha agregado "+_objeto+" a la habitacion");
+			System.out.println("Se ha agregado "+_objeto+" a "+this.nombre);
 			
 		}else {
-			System.out.println("No puede agregar más objetos. (máx 20)");
+			System.out.println("No puede agregar más objetos en "+this.nombre+". (máx 20)");
 		}
 		
 	}
@@ -141,10 +141,12 @@ public class Habitacion {
 	}
 	public void serviciosOn() {
 		servicios=true;
+		System.out.println("Servicios activados");
 	}
 	public void serviciosOff() {
 		servicios=false;
 		iluminado=false;
+		System.out.println("Servicios desactivados");
 	}
 }
 
